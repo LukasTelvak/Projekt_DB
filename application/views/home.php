@@ -16,7 +16,7 @@
     </div>
 </div>
         <div class="container">
-            <h2>Ako je vonku</h2>
+            <h2>Ako je vonku?</h2>
             <p>Denná a nočná teplota na najbližších 5 dní</p>
             <table class="table">
                 <thead>
