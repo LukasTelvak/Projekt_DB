@@ -16,7 +16,7 @@
             </div>
             <?php
             endif;
-            echo form_open( 'yakaynici/edit/'.$customers_item('idZakaznika'),array('class'=>'form-horizontal'));?>
+            echo form_open( 'zakaznici/edit/'.$customers_item('idZakaznika'),array('class'=>'form-horizontal'));?>
             <div class="form-group">
                 <?php foreach ($customers_item as $key => $value):?>
                 <label for="<?php echo $key;?>" class="col-sm-2 control-label"><?php echo $key;?></label>
