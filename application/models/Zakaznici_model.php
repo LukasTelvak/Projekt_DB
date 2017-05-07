@@ -31,3 +31,4 @@ function delete_zakaznici($id){
     $this->db->where('id', $id);
     return $this->db->delete('zakaznici');
 }
+
