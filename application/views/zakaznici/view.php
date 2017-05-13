@@ -2,7 +2,7 @@
 <div class="container">
     <div class="row">
         <div class="page-header">
-            <h1><?php echo $title; ?></h1>$
+            <h1><?php echo $title; ?></h1>
         </div>
     </div>
     <div class="row">
@@ -11,8 +11,8 @@
                 <?php foreach ($customers_item as $key => $value):?>
                 <div>
                     <dl class="dl-horizontal">
-                        <dt><?php echo $key;?></dt>
-                        <dd><?php echo $value;?></dd>
+                        <dt><?php print_r ($key);?></dt>
+                        <dd><?php print_r ($value);?></dd>
                     </dl>
                 </div>
                 <?php endforeach; ?>

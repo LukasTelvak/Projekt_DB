@@ -18,6 +18,14 @@ class Zakaznici_controller extends CI_Controller{
         $this->load->view('template/footer');
     }
 
+    public function create()
+    {
+        $this->load->view('template/header');
+        $this->load->view('template/navigation');
+        $this->load->view('zakaznici/create');
+        $this->load->view('template/footer');
+    }
+
     public function view($id = NULL)
     {
         $data['customers_item'] = $this->Zakaznici_model->get_zakaznici($id);
