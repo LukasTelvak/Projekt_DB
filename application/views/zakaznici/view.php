@@ -21,9 +21,9 @@
         <div class="col-md-4">
             <button type="button" class="btn btn-default" onclick="javascript:window.history.go(-1);">Späť</button>
         </div>
-    </div><!--/row-->
+    </div>
     <div class="row">
 
     </div>
-</div><!--/container-->
+</div>
 

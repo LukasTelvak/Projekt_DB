@@ -1,11 +1,13 @@
-<?php
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+class Zakaznici_model extends CI_Model{
 
-function _construct(){
+    function __construct() {
+        parent::__construct();
+    }
 
-}
-
-function get_zakaznici($id = FALSE){
-    if($id == FALSE){
+    function get_zakaznici($id = FALSE)
+{
+    if ($id === FALSE) {
         $query = $this->db->get('zakaznici');
         return $query->result_array();
     }
@@ -13,22 +15,26 @@ function get_zakaznici($id = FALSE){
     return $query->row_array();
 }
 
-function set_zakaznici($id = 0){
+function set_zakaznici($id = 0)
+{
     $this->load->helper('url');
-    foreach($_POST as $key => $value){
-        if($key !='submit')
-        $data[$key] = $value;
+    foreach ($_POST as $key => $value) {
+        if ($key != 'submit')
+            $data[$key] = $value;
     }
-    if($id == 0){
-        return $this->db->insert('zakaznici',$data);
-    }else{
-        $this->db->where('idZakaznika',$id);
-        return $this->db->update('zakaznik',$data);
+    if ($id == 0) {
+        return $this->db->insert('zakaznici', $data);
+    } else {
+        $this->db->where('idZakaznika', $id);
+        return $this->db->update('zakaznici', $data);
     }
 }
 
-function delete_zakaznici($id){
+function delete_zakaznici($id)
+{
     $this->db->where('id', $id);
     return $this->db->delete('zakaznici');
 }
+}
+?>
 

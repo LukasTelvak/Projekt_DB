@@ -52,3 +52,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+$route['zakaznici'] = "Zakaznici_controller";
+$route['zakaznici/view'] = 'Zakaznici_controller/view';
+$route['zakaznici/edit/(\d+)'] = 'Zakaznici_controller/edit/$1';
+$route['zakaznici/delete/(\d+)'] = 'Zakaznici_controller/delete/$1';
+
