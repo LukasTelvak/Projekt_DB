@@ -10,7 +10,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Športoviská</a>
+            <a class="navbar-brand" href="http://localhost/Projekt_DB/">Športoviská</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -18,7 +18,7 @@
                 <li><a href="#rezervacia">Rezervácia</a></li>
                 <li><a href="#sportoviska">Športoviská</a></li>
                 <li><a href="#vybavenie">Vybavenie</a></li>
-                <li><a href="#zakaznici">Zákazníci</a></li>
+                <li><a href="http://localhost/Projekt_DB/index.php/zakaznici">Zákazníci</a></li>
                 <li><a href="#cennik">Cenník</a></li>
             </ul>
         </div><!--/.nav-collapse -->

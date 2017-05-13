@@ -7,7 +7,7 @@ class Zakaznici_model extends CI_Model{
 
     function get_zakaznici($id = FALSE)
 {
-    if ($id === FALSE) {
+    if ($id == FALSE) {
         $query = $this->db->get('zakaznici');
         return $query->result_array();
     }
